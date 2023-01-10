@@ -1,0 +1,72 @@
+.container {
+  width: 20%;
+  display: flex;
+  border-right: 1px solid #ded8d8;
+}
+
+.darkContainer {
+  width: 20%;
+  display: flex;
+  border-right: 1px solid #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.minPhoto {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.name h2, .name h3 {
+  margin: 0;
+}
+
+.networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.list li {
+  font-size: 20px;
+  font-weight: bold;
+  width: 80%;
+  cursor: pointer;
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}

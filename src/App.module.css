@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.darkMode {
+  background-color: #202329;
+  color: white;
+}
