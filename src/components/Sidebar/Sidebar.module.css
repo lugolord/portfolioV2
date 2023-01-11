@@ -70,3 +70,7 @@
   position: fixed;
   bottom: 0;
 }
+
+.dev {
+  color: orange;
+}

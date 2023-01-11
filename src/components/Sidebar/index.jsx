@@ -21,7 +21,9 @@ const Sidebar = ({ setView }) => {
           <img src={mainPic} alt='Luis Gonzalez' className={styles.minPhoto} />
           <div className={styles.name}>
             <h2>Luis Gonzalez</h2>
-            <h3>Front-end dev</h3>
+            <h3>
+              Web <span className={styles.dev}>developer</span>
+            </h3>
           </div>
         </div>
         <div className={styles.networks}>
