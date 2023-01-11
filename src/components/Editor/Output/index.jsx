@@ -3,7 +3,6 @@ import styles from './Output.module.css'
 import { FullStack, FrontStack, BackStack } from '../../../functions'
 
 const Output = ({ commands }) => {
-  console.log(functions)
   const findFunction = (command) => {
     const lookedFunction = functions.find(f => f.name === command)
     if (lookedFunction) return lookedFunction()
