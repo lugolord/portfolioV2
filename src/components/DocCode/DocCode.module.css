@@ -1,0 +1,21 @@
+.docCodeCont {
+  margin-bottom: 30px;
+}
+
+.docCode {
+  font-family: monospace;
+  background-color: #000;
+  color: #ffa500;
+  display: inline;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.docOutput {
+  font-family: monospace;
+  background-color: #202329;
+  color: #fff;
+  display: inline;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

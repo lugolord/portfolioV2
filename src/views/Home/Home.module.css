@@ -1,0 +1,4 @@
+.homeContainer h1, .homeContainer > p {
+  margin-bottom: 20px;
+  text-wrap: pretty;
+}

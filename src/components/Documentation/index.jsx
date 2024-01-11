@@ -1,7 +1,7 @@
 import styles from './Documentation.module.css'
-import Home from './Home'
-import Stack from './Stack'
-import Projects from './Projects'
+import Home from '../../views/Home'
+// import Stack from './Stack'
+// import Projects from './Projects'
 import { useThemeContext } from '../../context/ThemeContext'
 
 const Documentation = ({ view }) => {
@@ -10,7 +10,7 @@ const Documentation = ({ view }) => {
   return (
     <div className={`${styles.container} ${darkMode ? styles.darkContainer : ''}`}>
       {view === 'home' && <Home />}
-      {view === 'stack' && <Stack />}
+      {/* {view === 'stack' && <Stack />} */}
       {view === 'projects' && <Projects />}
     </div>
   )

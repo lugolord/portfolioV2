@@ -1,0 +1,16 @@
+.projectTitle {
+  margin-bottom: 20px;
+}
+
+.projectImage {
+  width: 80%;
+  border: solid 1px #e8e2e2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.techList {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}

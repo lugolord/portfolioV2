@@ -1,0 +1,25 @@
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+}
+
+.main {
+  padding: 10px;
+  border-right: solid 1px #000;
+  overflow-y: auto;
+}
+
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.main h1, .main > p {
+  margin-bottom: 20px;
+  text-wrap: pretty;
+}
