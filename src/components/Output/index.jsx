@@ -1,6 +1,6 @@
-import { functions } from '../../../functions'
+import { functions } from '../../functions'
 import styles from './Output.module.css'
-import { FullStack, FrontStack, BackStack } from '../../../functions'
+import { FullStack, FrontStack, BackStack } from '../../functions'
 
 const Output = ({ commands }) => {
   const findFunction = (command) => {

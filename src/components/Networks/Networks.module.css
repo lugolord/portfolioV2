@@ -1,0 +1,35 @@
+.networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  width: 10%;
+  height: 10%;
+}
+
+@media (max-width: 769px) {
+  .networks {
+    flex-direction: column;
+  }
+
+  .icon {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 426px) {
+  .networks {
+    flex-direction: row;
+  }
+
+  .icon {
+    width: 10%;
+    height: 10%;
+  }
+}

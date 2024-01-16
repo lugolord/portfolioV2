@@ -7,8 +7,8 @@ const Home = () => {
       <p>
         Muchas gracias por pasarte por aca, es un placer 💛.
    
-        Este es mi portfolio, espero que te guste. No es como la mayoria,
-        esta inspirado en lo que mas leemos los desarrolladores, <b>documentacion</b>.
+        Este es mi portfolio, espero que te guste. Esta inspirado en lo que 
+        mas leemos los desarrolladores, <b>documentacion</b>.
       </p>
       <p>
         Para conocer mas de mi tendras que leer y ejecutar uno que otro codigo en la "consola".

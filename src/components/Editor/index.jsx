@@ -1,12 +1,12 @@
-import styles from './Editor.module.css'
-import Output from './Output'
 import { useState, useEffect } from 'react'
+import Output from '../Output'
+import styles from './Editor.module.css'
 
 const Editor = () => {
   const [code, setCode] = useState('')
   const [commands, setCommands] = useState([])
 
-  const handleKeyUp = (e) => {
+  const handleKeyUp = e => {
     if (e.key === 'Enter') {
       const codeCopy = code.replace('\n', '')
       setCommands([...commands, codeCopy])

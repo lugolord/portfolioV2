@@ -5,9 +5,13 @@
 }
 
 .main {
-  padding: 10px;
+  padding: 30px;
   border-right: solid 1px #000;
   overflow-y: auto;
+}
+
+main p {
+  max-width: 80%;
 }
 
 .main::-webkit-scrollbar {
@@ -22,4 +26,46 @@
 .main h1, .main > p {
   margin-bottom: 20px;
   text-wrap: pretty;
+}
+
+@media (max-width: 1025px) {
+  .main {
+    padding: 20px;
+  }
+
+  .main p {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 769px) {
+  .layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .main p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .layout {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .main {
+    padding: 10px;
+  }
+
+  .main p {
+    max-width: 100%;
+  } */
 }

@@ -1,0 +1,33 @@
+.accordion {
+  width: 80%;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.stackList {
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+/* @media (max-width: 426px) {
+  .accordion {
+    width: 100%;
+  }
+
+  .stackList {
+    flex-direction: column;
+  }
+
+  .listItem {
+    width: auto;
+  }
+} */

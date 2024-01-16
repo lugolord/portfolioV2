@@ -1,0 +1,10 @@
+.stackCodes {
+  display: flex;
+  gap: 10px;
+}
+
+/* @media (max-width: 426px) {
+  .stackCodes {
+    flex-direction: column;
+  }
+} */

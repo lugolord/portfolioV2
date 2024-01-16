@@ -1,6 +1,7 @@
 import mainPic from '../../assets/me.jfif'
+import styles from './SidebarHeader.module.css'
 
-export default function SidebarHeader ({ styles }) {
+export default function SidebarHeader () {
   return (
     <header className={styles.header}>
       <img src={mainPic} alt='Luis Gonzalez' className={styles.minPhoto} />

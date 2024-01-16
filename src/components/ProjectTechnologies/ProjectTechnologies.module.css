@@ -1,0 +1,11 @@
+.techList {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* @media (max-width: 426px) {
+  .techList {
+    flex-wrap: wrap;
+  }
+} */

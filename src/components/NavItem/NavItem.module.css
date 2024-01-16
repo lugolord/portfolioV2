@@ -9,3 +9,9 @@
   background-color: #d8d4d40c;
   transition: all ease-in 0.2s;
 }
+
+@media (max-width: 769px) {
+  .link {
+    padding: 5px;
+  }
+}

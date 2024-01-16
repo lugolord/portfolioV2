@@ -2,50 +2,6 @@
   border-right: solid 1px #000;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
-
-.minPhoto {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.name h2 {
-  font-size: 1.2rem;
-}
-
-.name h3 {
-  font-size: 1rem;
-}
-
-.name h2, .name h3 {
-  margin: 0;
-}
-
-.networks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.icon {
-  cursor: pointer;
-}
-
 .list {
   list-style: none;
   padding: 0;
@@ -64,6 +20,9 @@
   cursor: pointer;
 }
 
-.dev {
-  color: #ffa500;
+@media (max-width: 426px) {
+  .list {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
 }
