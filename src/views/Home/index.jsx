@@ -21,10 +21,7 @@ const Home = () => {
       </p>
       <DocCode text='capitalEslovenia' />
 
-      <p>Deberias ver la salida: Liubliana</p>
-
-      <p><b>Para limpiar la consola usa:</b></p>
-      <DocCode text='clear' />
+      <p>Deberias ver la salida: <i>Liubliana</i></p>
     </>
   )
 }

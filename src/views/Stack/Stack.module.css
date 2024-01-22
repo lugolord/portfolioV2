@@ -3,8 +3,8 @@
   gap: 10px;
 }
 
-/* @media (max-width: 426px) {
+@media (max-width: 425px) {
   .stackCodes {
     flex-direction: column;
   }
-} */
+}

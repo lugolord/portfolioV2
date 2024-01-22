@@ -1,48 +1,44 @@
 import { functions } from '../../functions'
-import styles from './Output.module.css'
 import { FullStack, FrontStack, BackStack } from '../../functions'
+import styles from './Output.module.css'
 
-const Output = ({ commands }) => {
-  const findFunction = (command) => {
+export default function Output ({ code }) {
+  const findFunction = command => {
     const lookedFunction = functions.find(f => f.name === command)
+
     if (lookedFunction) return lookedFunction()
+
     return { value: 'command does not exist', type: 'notfound' }
   }
 
-  return (
-    <>
-      {commands.map((command, index) => {
-        const output = findFunction(command)
+  const foundFunction = findFunction(code)
 
-        if (output.type === 'a') {
-          return (
-          <a
-            key={index}
-            href={output.href}
-            target='_blank'
-            rel='noopener noreferrer'
-            className={styles.link}
-          >
-            {output.value}
-          </a>
-          )
-        }
+  if (foundFunction.type === 'a') {
+    return (
+    <a
+      key={self.crypto.randomUUID()}
+      href={foundFunction.href}
+      target='_blank'
+      rel='noopener noreferrer'
+      className={styles.link}
+    >
+      {foundFunction.value}
+    </a>
+    )
+  }
 
-        if (output.type === 'component') {
-          switch (output.value) {
-            case 'fullstack':
-              return <FullStack key={index} />
-            case 'front':
-              return <FrontStack key={index} />
-            case 'back':
-              return <BackStack key={index} />
-          }
-        }
+  if (foundFunction.type === 'component') {
+    switch (foundFunction.value) {
+      case 'fullstack':
+        return <FullStack key={self.crypto.randomUUID()} />
+      case 'front':
+        return <FrontStack key={self.crypto.randomUUID()} />
+      case 'back':
+        return <BackStack key={self.crypto.randomUUID()} />
+    }
+  }
 
-        return <p key={index} className={styles.output}>{output.value}</p>
-      })}
-    </>
-  )
+  if (code !== '') {
+    return <p key={self.crypto.randomUUID()} className={styles.output}>{foundFunction.value}</p>
+  }
 }
-
-export default Output

@@ -1,33 +1,40 @@
 .container {
-  background-color: #202329;
+  background-color: #25282f;
   overflow: hidden;
+  padding: 30px;
+}
+
+.codeInput {
+  height: 45%;
+  width: 90%;
 }
 
 .code {
-  height: 45%;
-  width: 90%;
-  resize: none;
   outline: none;
   background-color: transparent;
   color: #f89f05;
   font-size: 1rem;
-  padding: 10px;
   border: none;
   font-family: monospace;
 }
 
-.output {
-  height: 51%;
-  color: #ffffff;
-  padding: 10px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+@media (max-width: 769px) {
+  .container {
+    padding: 10px;
+  }
+
+  .codeInput {
+    height: 100px;
+  }
 }
 
-.output::-webkit-scrollbar {
-  display: none;
-}
+@media (max-width: 426px) {
+  .container {
+    padding: 10px;
+  }
 
-.output h3 {
-  margin-bottom: 20px;
+  .codeInput {
+    display: flex;
+    align-items: center;
+  }
 }

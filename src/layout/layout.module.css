@@ -6,7 +6,6 @@
 
 .main {
   padding: 30px;
-  border-right: solid 1px #000;
   overflow-y: auto;
 }
 

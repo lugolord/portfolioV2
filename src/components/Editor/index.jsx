@@ -1,38 +1,31 @@
-import { useState, useEffect } from 'react'
-import Output from '../Output'
+import { useState } from 'react'
+import OutputContainer from '../OutputContainer'
 import styles from './Editor.module.css'
 
-const Editor = () => {
-  const [code, setCode] = useState('')
-  const [commands, setCommands] = useState([])
+export default function Editor () {
+  const [codeIn, setCodeIn] = useState('')
+  const [codeOut, setCodeOut] = useState('')
 
-  const handleKeyUp = e => {
+  const handleChange = e => {
     if (e.key === 'Enter') {
-      const codeCopy = code.replace('\n', '')
-      setCommands([...commands, codeCopy])
-      setCode('')
+      const command = e.target.value
+      setCodeOut(command.replace('\n', ''))
+      setCodeIn('')
     }
   }
 
-  useEffect(() => {
-    if (commands.includes('clear')) setCommands([])
-  }, [commands])
-
   return (
     <div className={styles.container}>
-      <textarea
-        className={styles.code}
-        onChange={e => setCode(e.target.value)}
-        onKeyUp={handleKeyUp}
-        value={code}
-        placeholder='code here...'
-      />
-      <div className={styles.output}>
-        <h3>Output</h3>
-        <Output commands={commands} />
+      <div className={styles.codeInput}>
+        <input
+          className={styles.code}
+          onKeyUp={handleChange}
+          placeholder='code here...'
+          onChange={e => setCodeIn(e.target.value)}
+          value={codeIn}
+        />
       </div>
+      <OutputContainer codeOut={codeOut} />
     </div>
   )
 }
-
-export default Editor
