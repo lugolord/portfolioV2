@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", Geneva, Tahoma, sans-serif;
+}
+
