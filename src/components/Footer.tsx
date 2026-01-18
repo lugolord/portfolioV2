@@ -14,7 +14,7 @@ const frases = [
 function Footer () {
   return (
     <footer className='mt-16 mb-3'>
-      <span className='flex justify-center items-center text-xs'>
+      <span className='flex justify-center text-xs'>
         Luis Gonzalez | 2026 |
         <span className="text-rotate mx-1 text-center">
           <span>
